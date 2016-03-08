@@ -37,10 +37,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
     stringsToSort=[NSMutableArray arrayWithObjects:
-                   @"￥hhh, .$",@" ￥Chin ese ",@"开源中国 ",@"www.oschina.net",
-                   @"开源技术",@"社区",@"开发者",@"传播",
-                   @"2014",@"2013",@"100",@"中国",@"暑假作业",
-                   @"键盘", @"鼠标",@"hello",@"world",@"洪伟焕",
+                   @"2",
                    nil];
     [self getPeoplePicker];
     
