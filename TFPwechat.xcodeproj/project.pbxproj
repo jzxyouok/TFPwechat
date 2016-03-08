@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1BC4BC1C8A7B8500D3D6AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4BB1C8A7B8500D3D6AE /* main.m */; };
+		9C1BC4BF1C8A7B8500D3D6AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4BE1C8A7B8500D3D6AE /* AppDelegate.m */; };
+		9C1BC4C21C8A7B8500D3D6AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4C11C8A7B8500D3D6AE /* ViewController.m */; };
+		9C1BC4C51C8A7B8500D3D6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1BC4C31C8A7B8500D3D6AE /* Main.storyboard */; };
+		9C1BC4C71C8A7B8500D3D6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1BC4C61C8A7B8500D3D6AE /* Assets.xcassets */; };
+		9C1BC4CA1C8A7B8500D3D6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1BC4C81C8A7B8500D3D6AE /* LaunchScreen.storyboard */; };
+		9C1BC4D51C8A7B8500D3D6AE /* TFPwechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4D41C8A7B8500D3D6AE /* TFPwechatTests.m */; };
+		9C1BC4E01C8A7B8500D3D6AE /* TFPwechatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4DF1C8A7B8500D3D6AE /* TFPwechatUITests.m */; };
+		9C1BC4EF1C8A7BED00D3D6AE /* TFPMsgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4EE1C8A7BED00D3D6AE /* TFPMsgTableViewCell.m */; };
+		9C1BC4F21C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4F11C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.m */; };
+		9C1BC4F51C8A7C6000D3D6AE /* TFPSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4F41C8A7C6000D3D6AE /* TFPSetTableViewCell.m */; };
+		9C1BC4F81C8A7C9900D3D6AE /* TFPMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4F71C8A7C9900D3D6AE /* TFPMsgViewController.m */; };
+		9C1BC4FB1C8A7CB300D3D6AE /* TFPAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4FA1C8A7CB300D3D6AE /* TFPAddressBookViewController.m */; };
+		9C1BC4FE1C8A7CC700D3D6AE /* TFPFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC4FD1C8A7CC700D3D6AE /* TFPFindViewController.m */; };
+		9C1BC5011C8A7CE300D3D6AE /* TFPSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BC5001C8A7CE300D3D6AE /* TFPSetViewController.m */; };
+		9C4B2FAB1C8AEC6000642FB0 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B2FA81C8AEC6000642FB0 /* ChineseString.m */; };
+		9C4B2FAC1C8AEC6000642FB0 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B2FA91C8AEC6000642FB0 /* pinyin.c */; };
+		9C60CA8F1C8A86CE00E01A5D /* address_book_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA871C8A86CE00E01A5D /* address_book_normal.png */; };
+		9C60CA901C8A86CE00E01A5D /* address_book_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA881C8A86CE00E01A5D /* address_book_pressed.png */; };
+		9C60CA911C8A86CE00E01A5D /* find_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA891C8A86CE00E01A5D /* find_normal.png */; };
+		9C60CA921C8A86CE00E01A5D /* find_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA8A1C8A86CE00E01A5D /* find_pressed.png */; };
+		9C60CA931C8A86CE00E01A5D /* msg_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA8B1C8A86CE00E01A5D /* msg_normal.png */; };
+		9C60CA941C8A86CE00E01A5D /* msg_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA8C1C8A86CE00E01A5D /* msg_pressed.png */; };
+		9C60CA951C8A86CE00E01A5D /* set_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA8D1C8A86CE00E01A5D /* set_normal.png */; };
+		9C60CA961C8A86CE00E01A5D /* set_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C60CA8E1C8A86CE00E01A5D /* set_pressed.png */; };
+		9C60CA9E1C8A8D6B00E01A5D /* TFPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C60CA9D1C8A8D6B00E01A5D /* TFPImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C1BC4D11C8A7B8500D3D6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1BC4AF1C8A7B8500D3D6AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1BC4B61C8A7B8500D3D6AE;
+			remoteInfo = TFPwechat;
+		};
+		9C1BC4DC1C8A7B8500D3D6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1BC4AF1C8A7B8500D3D6AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1BC4B61C8A7B8500D3D6AE;
+			remoteInfo = TFPwechat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C1BC4B71C8A7B8500D3D6AE /* TFPwechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFPwechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1BC4BB1C8A7B8500D3D6AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C1BC4BD1C8A7B8500D3D6AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C1BC4BE1C8A7B8500D3D6AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C1BC4C01C8A7B8500D3D6AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C1BC4C11C8A7B8500D3D6AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C1BC4C41C8A7B8500D3D6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C1BC4C61C8A7B8500D3D6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C1BC4C91C8A7B8500D3D6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C1BC4CB1C8A7B8500D3D6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1BC4D01C8A7B8500D3D6AE /* TFPwechatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFPwechatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1BC4D41C8A7B8500D3D6AE /* TFPwechatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPwechatTests.m; sourceTree = "<group>"; };
+		9C1BC4D61C8A7B8500D3D6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1BC4DB1C8A7B8500D3D6AE /* TFPwechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFPwechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1BC4DF1C8A7B8500D3D6AE /* TFPwechatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPwechatUITests.m; sourceTree = "<group>"; };
+		9C1BC4E11C8A7B8500D3D6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1BC4ED1C8A7BED00D3D6AE /* TFPMsgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPMsgTableViewCell.h; sourceTree = "<group>"; };
+		9C1BC4EE1C8A7BED00D3D6AE /* TFPMsgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPMsgTableViewCell.m; sourceTree = "<group>"; };
+		9C1BC4F01C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPAddressBookTableViewCell.h; sourceTree = "<group>"; };
+		9C1BC4F11C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPAddressBookTableViewCell.m; sourceTree = "<group>"; };
+		9C1BC4F31C8A7C6000D3D6AE /* TFPSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPSetTableViewCell.h; sourceTree = "<group>"; };
+		9C1BC4F41C8A7C6000D3D6AE /* TFPSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPSetTableViewCell.m; sourceTree = "<group>"; };
+		9C1BC4F61C8A7C9900D3D6AE /* TFPMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPMsgViewController.h; sourceTree = "<group>"; };
+		9C1BC4F71C8A7C9900D3D6AE /* TFPMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPMsgViewController.m; sourceTree = "<group>"; };
+		9C1BC4F91C8A7CB300D3D6AE /* TFPAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPAddressBookViewController.h; sourceTree = "<group>"; };
+		9C1BC4FA1C8A7CB300D3D6AE /* TFPAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPAddressBookViewController.m; sourceTree = "<group>"; };
+		9C1BC4FC1C8A7CC700D3D6AE /* TFPFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPFindViewController.h; sourceTree = "<group>"; };
+		9C1BC4FD1C8A7CC700D3D6AE /* TFPFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPFindViewController.m; sourceTree = "<group>"; };
+		9C1BC4FF1C8A7CE300D3D6AE /* TFPSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPSetViewController.h; sourceTree = "<group>"; };
+		9C1BC5001C8A7CE300D3D6AE /* TFPSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPSetViewController.m; sourceTree = "<group>"; };
+		9C4B2FA71C8AEC6000642FB0 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChineseString.h; path = getIndex/ChineseString.h; sourceTree = "<group>"; };
+		9C4B2FA81C8AEC6000642FB0 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChineseString.m; path = getIndex/ChineseString.m; sourceTree = "<group>"; };
+		9C4B2FA91C8AEC6000642FB0 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pinyin.c; path = getIndex/pinyin.c; sourceTree = "<group>"; };
+		9C4B2FAA1C8AEC6000642FB0 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pinyin.h; path = getIndex/pinyin.h; sourceTree = "<group>"; };
+		9C60CA871C8A86CE00E01A5D /* address_book_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = address_book_normal.png; path = res/address_book_normal.png; sourceTree = "<group>"; };
+		9C60CA881C8A86CE00E01A5D /* address_book_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = address_book_pressed.png; path = res/address_book_pressed.png; sourceTree = "<group>"; };
+		9C60CA891C8A86CE00E01A5D /* find_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = find_normal.png; path = res/find_normal.png; sourceTree = "<group>"; };
+		9C60CA8A1C8A86CE00E01A5D /* find_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = find_pressed.png; path = res/find_pressed.png; sourceTree = "<group>"; };
+		9C60CA8B1C8A86CE00E01A5D /* msg_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_normal.png; path = res/msg_normal.png; sourceTree = "<group>"; };
+		9C60CA8C1C8A86CE00E01A5D /* msg_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_pressed.png; path = res/msg_pressed.png; sourceTree = "<group>"; };
+		9C60CA8D1C8A86CE00E01A5D /* set_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = set_normal.png; path = res/set_normal.png; sourceTree = "<group>"; };
+		9C60CA8E1C8A86CE00E01A5D /* set_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = set_pressed.png; path = res/set_pressed.png; sourceTree = "<group>"; };
+		9C60CA9C1C8A8D6B00E01A5D /* TFPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPImage.h; sourceTree = "<group>"; };
+		9C60CA9D1C8A8D6B00E01A5D /* TFPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPImage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C1BC4B41C8A7B8500D3D6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4CD1C8A7B8500D3D6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4D81C8A7B8500D3D6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C1BC4AE1C8A7B8500D3D6AE = {
+			isa = PBXGroup;
+			children = (
+				9C1BC4B91C8A7B8500D3D6AE /* TFPwechat */,
+				9C1BC4D31C8A7B8500D3D6AE /* TFPwechatTests */,
+				9C1BC4DE1C8A7B8500D3D6AE /* TFPwechatUITests */,
+				9C1BC4B81C8A7B8500D3D6AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C1BC4B81C8A7B8500D3D6AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C1BC4B71C8A7B8500D3D6AE /* TFPwechat.app */,
+				9C1BC4D01C8A7B8500D3D6AE /* TFPwechatTests.xctest */,
+				9C1BC4DB1C8A7B8500D3D6AE /* TFPwechatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C1BC4B91C8A7B8500D3D6AE /* TFPwechat */ = {
+			isa = PBXGroup;
+			children = (
+				9C4B2FA61C8AEB9700642FB0 /* getIndex */,
+				9C1BC4BD1C8A7B8500D3D6AE /* AppDelegate.h */,
+				9C1BC4BE1C8A7B8500D3D6AE /* AppDelegate.m */,
+				9C60CA9C1C8A8D6B00E01A5D /* TFPImage.h */,
+				9C60CA9D1C8A8D6B00E01A5D /* TFPImage.m */,
+				9C1BC4C01C8A7B8500D3D6AE /* ViewController.h */,
+				9C1BC4ED1C8A7BED00D3D6AE /* TFPMsgTableViewCell.h */,
+				9C1BC4EE1C8A7BED00D3D6AE /* TFPMsgTableViewCell.m */,
+				9C1BC4F31C8A7C6000D3D6AE /* TFPSetTableViewCell.h */,
+				9C1BC4F41C8A7C6000D3D6AE /* TFPSetTableViewCell.m */,
+				9C1BC4F61C8A7C9900D3D6AE /* TFPMsgViewController.h */,
+				9C1BC4F71C8A7C9900D3D6AE /* TFPMsgViewController.m */,
+				9C1BC4F91C8A7CB300D3D6AE /* TFPAddressBookViewController.h */,
+				9C1BC4FA1C8A7CB300D3D6AE /* TFPAddressBookViewController.m */,
+				9C1BC4FC1C8A7CC700D3D6AE /* TFPFindViewController.h */,
+				9C1BC4FD1C8A7CC700D3D6AE /* TFPFindViewController.m */,
+				9C1BC4FF1C8A7CE300D3D6AE /* TFPSetViewController.h */,
+				9C1BC5001C8A7CE300D3D6AE /* TFPSetViewController.m */,
+				9C1BC4F01C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.h */,
+				9C1BC4F11C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.m */,
+				9C1BC4C11C8A7B8500D3D6AE /* ViewController.m */,
+				9C1BC4C31C8A7B8500D3D6AE /* Main.storyboard */,
+				9C60CA861C8A85BF00E01A5D /* res */,
+				9C1BC4C61C8A7B8500D3D6AE /* Assets.xcassets */,
+				9C1BC4C81C8A7B8500D3D6AE /* LaunchScreen.storyboard */,
+				9C1BC4CB1C8A7B8500D3D6AE /* Info.plist */,
+				9C1BC4BA1C8A7B8500D3D6AE /* Supporting Files */,
+			);
+			path = TFPwechat;
+			sourceTree = "<group>";
+		};
+		9C1BC4BA1C8A7B8500D3D6AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C1BC4BB1C8A7B8500D3D6AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C1BC4D31C8A7B8500D3D6AE /* TFPwechatTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1BC4D41C8A7B8500D3D6AE /* TFPwechatTests.m */,
+				9C1BC4D61C8A7B8500D3D6AE /* Info.plist */,
+			);
+			path = TFPwechatTests;
+			sourceTree = "<group>";
+		};
+		9C1BC4DE1C8A7B8500D3D6AE /* TFPwechatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1BC4DF1C8A7B8500D3D6AE /* TFPwechatUITests.m */,
+				9C1BC4E11C8A7B8500D3D6AE /* Info.plist */,
+			);
+			path = TFPwechatUITests;
+			sourceTree = "<group>";
+		};
+		9C4B2FA61C8AEB9700642FB0 /* getIndex */ = {
+			isa = PBXGroup;
+			children = (
+				9C4B2FA71C8AEC6000642FB0 /* ChineseString.h */,
+				9C4B2FA81C8AEC6000642FB0 /* ChineseString.m */,
+				9C4B2FA91C8AEC6000642FB0 /* pinyin.c */,
+				9C4B2FAA1C8AEC6000642FB0 /* pinyin.h */,
+			);
+			name = getIndex;
+			sourceTree = "<group>";
+		};
+		9C60CA861C8A85BF00E01A5D /* res */ = {
+			isa = PBXGroup;
+			children = (
+				9C60CA871C8A86CE00E01A5D /* address_book_normal.png */,
+				9C60CA881C8A86CE00E01A5D /* address_book_pressed.png */,
+				9C60CA891C8A86CE00E01A5D /* find_normal.png */,
+				9C60CA8A1C8A86CE00E01A5D /* find_pressed.png */,
+				9C60CA8B1C8A86CE00E01A5D /* msg_normal.png */,
+				9C60CA8C1C8A86CE00E01A5D /* msg_pressed.png */,
+				9C60CA8D1C8A86CE00E01A5D /* set_normal.png */,
+				9C60CA8E1C8A86CE00E01A5D /* set_pressed.png */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C1BC4B61C8A7B8500D3D6AE /* TFPwechat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1BC4E41C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechat" */;
+			buildPhases = (
+				9C1BC4B31C8A7B8500D3D6AE /* Sources */,
+				9C1BC4B41C8A7B8500D3D6AE /* Frameworks */,
+				9C1BC4B51C8A7B8500D3D6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFPwechat;
+			productName = TFPwechat;
+			productReference = 9C1BC4B71C8A7B8500D3D6AE /* TFPwechat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C1BC4CF1C8A7B8500D3D6AE /* TFPwechatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1BC4E71C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechatTests" */;
+			buildPhases = (
+				9C1BC4CC1C8A7B8500D3D6AE /* Sources */,
+				9C1BC4CD1C8A7B8500D3D6AE /* Frameworks */,
+				9C1BC4CE1C8A7B8500D3D6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1BC4D21C8A7B8500D3D6AE /* PBXTargetDependency */,
+			);
+			name = TFPwechatTests;
+			productName = TFPwechatTests;
+			productReference = 9C1BC4D01C8A7B8500D3D6AE /* TFPwechatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C1BC4DA1C8A7B8500D3D6AE /* TFPwechatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1BC4EA1C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechatUITests" */;
+			buildPhases = (
+				9C1BC4D71C8A7B8500D3D6AE /* Sources */,
+				9C1BC4D81C8A7B8500D3D6AE /* Frameworks */,
+				9C1BC4D91C8A7B8500D3D6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1BC4DD1C8A7B8500D3D6AE /* PBXTargetDependency */,
+			);
+			name = TFPwechatUITests;
+			productName = TFPwechatUITests;
+			productReference = 9C1BC4DB1C8A7B8500D3D6AE /* TFPwechatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C1BC4AF1C8A7B8500D3D6AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "foscam-hwh";
+				TargetAttributes = {
+					9C1BC4B61C8A7B8500D3D6AE = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JX63R72QD4;
+					};
+					9C1BC4CF1C8A7B8500D3D6AE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9C1BC4B61C8A7B8500D3D6AE;
+					};
+					9C1BC4DA1C8A7B8500D3D6AE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9C1BC4B61C8A7B8500D3D6AE;
+					};
+				};
+			};
+			buildConfigurationList = 9C1BC4B21C8A7B8500D3D6AE /* Build configuration list for PBXProject "TFPwechat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C1BC4AE1C8A7B8500D3D6AE;
+			productRefGroup = 9C1BC4B81C8A7B8500D3D6AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C1BC4B61C8A7B8500D3D6AE /* TFPwechat */,
+				9C1BC4CF1C8A7B8500D3D6AE /* TFPwechatTests */,
+				9C1BC4DA1C8A7B8500D3D6AE /* TFPwechatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C1BC4B51C8A7B8500D3D6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C60CA961C8A86CE00E01A5D /* set_pressed.png in Resources */,
+				9C60CA931C8A86CE00E01A5D /* msg_normal.png in Resources */,
+				9C1BC4CA1C8A7B8500D3D6AE /* LaunchScreen.storyboard in Resources */,
+				9C60CA921C8A86CE00E01A5D /* find_pressed.png in Resources */,
+				9C60CA901C8A86CE00E01A5D /* address_book_pressed.png in Resources */,
+				9C1BC4C71C8A7B8500D3D6AE /* Assets.xcassets in Resources */,
+				9C60CA911C8A86CE00E01A5D /* find_normal.png in Resources */,
+				9C60CA8F1C8A86CE00E01A5D /* address_book_normal.png in Resources */,
+				9C60CA941C8A86CE00E01A5D /* msg_pressed.png in Resources */,
+				9C1BC4C51C8A7B8500D3D6AE /* Main.storyboard in Resources */,
+				9C60CA951C8A86CE00E01A5D /* set_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4CE1C8A7B8500D3D6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4D91C8A7B8500D3D6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C1BC4B31C8A7B8500D3D6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1BC4F81C8A7C9900D3D6AE /* TFPMsgViewController.m in Sources */,
+				9C1BC4F21C8A7C4100D3D6AE /* TFPAddressBookTableViewCell.m in Sources */,
+				9C1BC5011C8A7CE300D3D6AE /* TFPSetViewController.m in Sources */,
+				9C1BC4EF1C8A7BED00D3D6AE /* TFPMsgTableViewCell.m in Sources */,
+				9C1BC4FE1C8A7CC700D3D6AE /* TFPFindViewController.m in Sources */,
+				9C1BC4FB1C8A7CB300D3D6AE /* TFPAddressBookViewController.m in Sources */,
+				9C1BC4C21C8A7B8500D3D6AE /* ViewController.m in Sources */,
+				9C1BC4F51C8A7C6000D3D6AE /* TFPSetTableViewCell.m in Sources */,
+				9C4B2FAB1C8AEC6000642FB0 /* ChineseString.m in Sources */,
+				9C1BC4BF1C8A7B8500D3D6AE /* AppDelegate.m in Sources */,
+				9C1BC4BC1C8A7B8500D3D6AE /* main.m in Sources */,
+				9C4B2FAC1C8AEC6000642FB0 /* pinyin.c in Sources */,
+				9C60CA9E1C8A8D6B00E01A5D /* TFPImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4CC1C8A7B8500D3D6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1BC4D51C8A7B8500D3D6AE /* TFPwechatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BC4D71C8A7B8500D3D6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1BC4E01C8A7B8500D3D6AE /* TFPwechatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C1BC4D21C8A7B8500D3D6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1BC4B61C8A7B8500D3D6AE /* TFPwechat */;
+			targetProxy = 9C1BC4D11C8A7B8500D3D6AE /* PBXContainerItemProxy */;
+		};
+		9C1BC4DD1C8A7B8500D3D6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1BC4B61C8A7B8500D3D6AE /* TFPwechat */;
+			targetProxy = 9C1BC4DC1C8A7B8500D3D6AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C1BC4C31C8A7B8500D3D6AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1BC4C41C8A7B8500D3D6AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C1BC4C81C8A7B8500D3D6AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1BC4C91C8A7B8500D3D6AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C1BC4E21C8A7B8500D3D6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C1BC4E31C8A7B8500D3D6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C1BC4E51C8A7B8500D3D6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TFPwechat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C1BC4E61C8A7B8500D3D6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TFPwechat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C1BC4E81C8A7B8500D3D6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFPwechatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFPwechat.app/TFPwechat";
+			};
+			name = Debug;
+		};
+		9C1BC4E91C8A7B8500D3D6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFPwechatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFPwechat.app/TFPwechat";
+			};
+			name = Release;
+		};
+		9C1BC4EB1C8A7B8500D3D6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFPwechatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFPwechat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9C1BC4EC1C8A7B8500D3D6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFPwechatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fontData.TFPwechatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFPwechat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C1BC4B21C8A7B8500D3D6AE /* Build configuration list for PBXProject "TFPwechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1BC4E21C8A7B8500D3D6AE /* Debug */,
+				9C1BC4E31C8A7B8500D3D6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1BC4E41C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1BC4E51C8A7B8500D3D6AE /* Debug */,
+				9C1BC4E61C8A7B8500D3D6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1BC4E71C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1BC4E81C8A7B8500D3D6AE /* Debug */,
+				9C1BC4E91C8A7B8500D3D6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1BC4EA1C8A7B8500D3D6AE /* Build configuration list for PBXNativeTarget "TFPwechatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1BC4EB1C8A7B8500D3D6AE /* Debug */,
+				9C1BC4EC1C8A7B8500D3D6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C1BC4AF1C8A7B8500D3D6AE /* Project object */;
+}
